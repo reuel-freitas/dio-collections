@@ -1,3 +1,5 @@
+//Map Exercise
+
 const users = new Map();
 
 users.set('James', 'Admin')
@@ -18,3 +20,15 @@ const getAdmins = (map, occupation) => {
 }
 
 console.log(getAdmins(users, "Developer"))
+
+//Set Exercise
+
+const customArray = [30, 30, 40, 5, 223, 2049, 3034, 5]
+
+const uniqueValues = arr => {
+    const settingValues = new Set(arr)
+
+    return [...settingValues];
+}
+
+console.log(uniqueValues(customArray))
